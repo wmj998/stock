@@ -162,7 +162,7 @@ def Drawing(x, y1, y2, y3, y4, y5):
 
 def main():
     num = int(input("请输入数量："))
-    time = input("请输入时间间隔（分钟）：")  # 30
+    time = input("请输入时间间隔（分钟）：")  # 30或者60
     url = "http://money.finance.sina.com.cn/quotes_service/api/json_v2.php/CN_MarketData.getKLineData?symbol=sh600438&scale=" + time + "&ma=no&datalen=" + str(num)
     html = getHTMLText(url)
     getData(html,num)
